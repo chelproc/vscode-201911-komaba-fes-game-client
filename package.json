@@ -1,0 +1,37 @@
+{
+  "name": "201911-komaba-fes-game-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "dev": "npm run clean && parcel watch src/index.html",
+    "release": "npm run clean && parcel build src/index.html --no-sourcemaps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chelproc/vscode-201911-komaba-fes-game-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chelproc/vscode-201911-komaba-fes-game-client/issues"
+  },
+  "homepage": "https://github.com/chelproc/vscode-201911-komaba-fes-game-client#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "@types/socket.io-client": "^1.4.32",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.0",
+    "sass": "^1.23.7",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-singleton-component": "^1.0.2",
+    "socket.io-client": "^2.3.0"
+  }
+}
